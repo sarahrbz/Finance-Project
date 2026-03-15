@@ -1,0 +1,28 @@
+<div class="container-fluid login-bg d-flex justify-content-center align-items-center">
+
+ <div class="login-box">
+
+  <div class="d-flex justify-content-center mb-3">
+  <img src="images/login.svg" width="190" alt="login">
+</div>
+  <h4>Área reservada</h4>
+
+  <form [formGroup]="loginForm">
+   <div class="mb-3">
+      <input formControlName="email" type="email" placeholder="Informe seu email" title="Digite o seu email do sistema" autofocus class="form-control" id="inputEmail">
+    </div>
+
+    <div class="mb-3">
+
+      <input formControlName="password" type="password" placeholder="Senha do Sistema" title="Informe a sua senha" class="form-control" id="inputPassword">
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100" (click)="login()">Entrar</button>
+  </form>
+
+  <div class="router text-center mt-3">
+      <a routerLink="/cadastro">Criar conta</a>
+    </div>
+
+ </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid login-bg d-flex justify-content-center align-items-center">
+
+ <div class="Cadastro-box">
+
+  <div class="d-flex justify-content-center mb-3">
+  <img src="images/novoUsuario.svg" width="190" alt="newuser">
+</div>
+  <h4>Novo usuário</h4>
+
+  <form [formGroup]="cadastroForm">
+   <div class="mb-3">
+      <input formControlName="email" type="email" placeholder="Informe seu email" title="Digite o seu email do sistema" autofocus class="form-control" id="inputEmail">
+    </div>
+
+    <div class="mb-3">
+
+      <input formControlName="password" type="password" placeholder="Senha do Sistema" title="Informe a sua senha" class="form-control" id="inputPassword">
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100" (click)="signUp()">Cadastrar</button>
+  </form>
+
+  <div class="router text-center mt-3">
+      <a routerLink="/login">Efetuar o login </a>
+    </div>
+
+ </div>
+</div>
